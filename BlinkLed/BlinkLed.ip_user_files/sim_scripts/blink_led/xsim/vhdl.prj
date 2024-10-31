@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/blink_led/ip/blink_led_axi_gpio_0_0/sim/blink_led_axi_gpio_0_0.vhd" \
+"../../../bd/blink_led/ip/blink_led_rst_ps7_0_50M_0/sim/blink_led_rst_ps7_0_50M_0.vhd" \
+
+nosort

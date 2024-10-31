@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/32Bits_LFSR/32Bits_LFSR.srcs/sources_1/new/LFSR32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/32Bits_LFSR/32Bits_LFSR.srcs/sim_1/new/LSFR32Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSFR32Sim

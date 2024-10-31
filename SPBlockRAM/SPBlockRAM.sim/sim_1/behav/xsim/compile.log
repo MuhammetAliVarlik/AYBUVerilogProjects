@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.srcs/sources_1/new/SPBlockRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPBlockRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.srcs/sources_1/new/Sort_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sort_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.srcs/sim_1/new/SPBlockRAMSim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPBlockRAMSim

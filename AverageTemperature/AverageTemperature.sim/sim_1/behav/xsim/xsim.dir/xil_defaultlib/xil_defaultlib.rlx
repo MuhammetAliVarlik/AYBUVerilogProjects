@@ -1,0 +1,11 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sim_1/new/AverageTemparatureSim.v,1701515711,verilog,,,,AverageTemparatureSim,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sim_1/new/TemperatureAveragerSim.v,1702891699,verilog,,,,TemperatureAveragerSim,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/AverageTemperature.v,1701515882,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/DFlipFlop.v,,AverageTemperature,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/DFlipFlop.v,1701374034,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/ShiftRegister.v,,DFlipFlop,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/ShiftRegister.v,1701515414,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sim_1/new/AverageTemparatureSim.v,,ShiftRegister,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/TemperatureAverager.v,1702752376,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sim_1/new/TemperatureAveragerSim.v,,TemperatureAverager,,,,,,,,

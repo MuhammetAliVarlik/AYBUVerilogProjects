@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../32Bits_LFSR.srcs/sources_1/new/LFSR32.v" \
+"../../../../32Bits_LFSR.srcs/sim_1/new/LSFR32Sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

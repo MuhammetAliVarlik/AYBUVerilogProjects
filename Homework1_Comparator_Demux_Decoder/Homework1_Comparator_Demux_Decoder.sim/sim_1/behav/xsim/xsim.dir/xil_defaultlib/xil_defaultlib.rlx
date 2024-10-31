@@ -1,0 +1,14 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Comparator1_Simulation.v,1697364760,verilog,,,,Comparator1_Simulation,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Comparator2_Simulation.v,1697447222,verilog,,,,Comparator2_Simulation,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Demux_Simulation.v,1697389839,verilog,,,,Demux_Simulation,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/comparator1.v,1697447590,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Comparator1_Simulation.v,,comparator1,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/comparator2.v,1697447329,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Comparator2_Simulation.v,,comparator2,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux16.v,1697389809,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux2.v,,demux16,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux2.v,1697374353,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux4.v,,demux2,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux4.v,1697387035,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux8.v,,demux4,,,,,,,,
+D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sources_1/new/demux8.v,1697387326,verilog,,D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Homework1_Comparator_Demux_Decoder/Homework1_Comparator_Demux_Decoder.srcs/sim_1/new/Demux_Simulation.v,,demux8,,,,,,,,

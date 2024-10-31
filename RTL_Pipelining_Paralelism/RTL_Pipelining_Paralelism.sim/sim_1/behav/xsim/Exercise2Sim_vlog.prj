@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RTL_Pipelining_Paralelism.srcs/sources_1/new/Exercise2.v" \
+"../../../../RTL_Pipelining_Paralelism.srcs/sim_1/new/Exercise2Sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

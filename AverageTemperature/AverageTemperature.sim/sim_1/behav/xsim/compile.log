@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sources_1/new/TemperatureAverager.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TemperatureAverager
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/AverageTemperature/AverageTemperature.srcs/sim_1/new/TemperatureAveragerSim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TemperatureAveragerSim

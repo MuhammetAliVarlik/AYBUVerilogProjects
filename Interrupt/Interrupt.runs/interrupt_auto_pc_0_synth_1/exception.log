@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\MuhammetAliVarlik\AYBU\Vivado_Projects\Interrupt\Interrupt.runs\interrupt_auto_pc_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Ýzin verilmedi

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SPBlockRAMSim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SPBlockRAMSim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="16.5700 ns"></ZoomStartTime>
+      <ZoomEndTime time="43.1701 ns"></ZoomEndTime>
+      <Cursor1Time time="24.5000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="217"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/SPBlockRAMSim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/sort" type="logic">
+      <obj_property name="ElementShortName">sort</obj_property>
+      <obj_property name="ObjectShortName">sort</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/di" type="array">
+      <obj_property name="ElementShortName">di[3:0]</obj_property>
+      <obj_property name="ObjectShortName">di[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/addr" type="array">
+      <obj_property name="ElementShortName">addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/di_reg" type="array">
+      <obj_property name="ElementShortName">di_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">di_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/addr_reg" type="array">
+      <obj_property name="ElementShortName">addr_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/en_reg" type="logic">
+      <obj_property name="ElementShortName">en_reg</obj_property>
+      <obj_property name="ObjectShortName">en_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/we_reg" type="logic">
+      <obj_property name="ElementShortName">we_reg</obj_property>
+      <obj_property name="ObjectShortName">we_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/p_state" type="array">
+      <obj_property name="ElementShortName">p_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">p_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/tmp1" type="array">
+      <obj_property name="ElementShortName">tmp1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/tmp2" type="array">
+      <obj_property name="ElementShortName">tmp2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp2[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/tmp1_addr" type="array">
+      <obj_property name="ElementShortName">tmp1_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp1_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/tmp2_addr" type="array">
+      <obj_property name="ElementShortName">tmp2_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp2_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/correct" type="array">
+      <obj_property name="ElementShortName">correct[2:0]</obj_property>
+      <obj_property name="ObjectShortName">correct[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/sorted_data" type="array">
+      <obj_property name="ElementShortName">sorted_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sorted_data[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SPBlockRAMSim/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,49 @@
+
+*** Running vivado
+    with args -log Sort_Mem.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Sort_Mem.tcl -notrace
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Sort_Mem.tcl -notrace
+Command: open_checkpoint D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.runs/impl_1/Sort_Mem.dcp
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 886.387 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 978.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1 (64-bit) build 3865809
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:01:14 . Memory (MB): peak = 982.816 ; gain = 698.914
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sorted_data_OBUF[0] has multiple drivers: sorted_data_reg[0]/Q, and sorted_data_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sorted_data_OBUF[1] has multiple drivers: sorted_data_reg[1]__0/Q, and sorted_data_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sorted_data_OBUF[2] has multiple drivers: sorted_data_reg[2]__0/Q, and sorted_data_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sorted_data_OBUF[3] has multiple drivers: sorted_data_reg[3]__0/Q, and sorted_data_reg[3]/Q.
+INFO: [Project 1-461] DRC finished with 4 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1033.945 ; gain = 28.930
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 16:33:56 2023...

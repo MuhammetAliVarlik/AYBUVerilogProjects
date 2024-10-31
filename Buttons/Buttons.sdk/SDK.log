@@ -1,0 +1,497 @@
+10:14:20 INFO  : Registering command handlers for SDK TCF services
+10:14:21 INFO  : Launching XSCT server: xsct.bat -interactive D:\MuhammetAliVarlik\AYBU\Vivado_Projects\Buttons\Buttons.sdk\temp_xsdb_launch_script.tcl
+10:14:25 INFO  : XSCT server has started successfully.
+10:14:25 INFO  : Successfully done setting XSCT server connection channel  
+10:14:25 INFO  : Successfully done setting SDK workspace  
+10:14:25 INFO  : Processing command line option -hwspec D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf.
+10:25:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:25:06 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+10:25:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:25:20 INFO  : 'fpga -state' command is executed.
+10:25:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:25:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+10:25:21 INFO  : 'jtag frequency' command is executed.
+10:25:21 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:25:21 INFO  : Context for 'APU' is selected.
+10:25:21 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf'.
+10:25:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:25:21 INFO  : Context for 'APU' is selected.
+10:25:21 INFO  : 'stop' command is executed.
+10:25:21 INFO  : 'ps7_init' command is executed.
+10:25:21 INFO  : 'ps7_post_config' command is executed.
+10:25:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:25:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:22 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:25:22 INFO  : 'configparams force-mem-access 0' command is executed.
+10:25:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:25:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:22 INFO  : 'con' command is executed.
+10:25:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+10:25:22 INFO  : Disconnected from the channel tcfchan#1.
+10:26:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:26:48 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+10:27:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:27:00 INFO  : 'fpga -state' command is executed.
+10:27:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+10:27:00 INFO  : 'jtag frequency' command is executed.
+10:27:00 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:27:00 INFO  : Context for 'APU' is selected.
+10:27:00 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf'.
+10:27:00 INFO  : 'configparams force-mem-access 1' command is executed.
+10:27:00 INFO  : Context for 'APU' is selected.
+10:27:00 INFO  : 'stop' command is executed.
+10:27:01 INFO  : 'ps7_init' command is executed.
+10:27:01 INFO  : 'ps7_post_config' command is executed.
+10:27:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:27:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:01 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:27:01 INFO  : 'configparams force-mem-access 0' command is executed.
+10:27:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:27:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:01 INFO  : 'con' command is executed.
+10:27:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+10:27:01 INFO  : Disconnected from the channel tcfchan#2.
+10:29:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:29:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:29:53 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+10:30:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:30:00 INFO  : 'fpga -state' command is executed.
+10:30:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+10:30:00 INFO  : 'jtag frequency' command is executed.
+10:30:00 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:30:00 INFO  : Context for 'APU' is selected.
+10:30:00 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf'.
+10:30:00 INFO  : 'configparams force-mem-access 1' command is executed.
+10:30:00 INFO  : Context for 'APU' is selected.
+10:30:00 INFO  : 'stop' command is executed.
+10:30:01 INFO  : 'ps7_init' command is executed.
+10:30:01 INFO  : 'ps7_post_config' command is executed.
+10:30:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:30:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:01 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:30:01 INFO  : 'configparams force-mem-access 0' command is executed.
+10:30:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons/Debug/buttons.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:30:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:01 INFO  : 'con' command is executed.
+10:30:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+10:30:01 INFO  : Disconnected from the channel tcfchan#3.
+10:43:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1710492198950,  Project:1710490202903
+10:43:19 INFO  : Project buttons_wrapper_hw_platform_0's source hardware specification located at D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:43:59 INFO  : Project buttons_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+10:44:27 INFO  : Launching XSCT server: xsct.bat -interactive D:\MuhammetAliVarlik\AYBU\Vivado_Projects\Buttons\Buttons.sdk\temp_xsdb_launch_script.tcl
+10:44:31 INFO  : XSCT server has started successfully.
+10:44:31 INFO  : Successfully done setting XSCT server connection channel  
+10:44:31 INFO  : Successfully done setting SDK workspace  
+10:44:39 INFO  : Registering command handlers for SDK TCF services
+10:44:39 INFO  : Processing command line option -hwspec D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf.
+10:51:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:51:27 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+10:51:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+10:51:39 INFO  : 'fpga -state' command is executed.
+10:51:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+10:51:40 INFO  : 'jtag frequency' command is executed.
+10:51:40 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:51:40 INFO  : Context for 'APU' is selected.
+10:51:40 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf'.
+10:51:40 INFO  : 'configparams force-mem-access 1' command is executed.
+10:51:40 INFO  : Context for 'APU' is selected.
+10:51:40 INFO  : 'stop' command is executed.
+10:51:40 INFO  : 'ps7_init' command is executed.
+10:51:40 INFO  : 'ps7_post_config' command is executed.
+10:51:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:51:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:41 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:51:41 INFO  : 'configparams force-mem-access 0' command is executed.
+10:51:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:51:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:41 INFO  : 'con' command is executed.
+10:51:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+10:51:41 INFO  : Disconnected from the channel tcfchan#1.
+10:52:59 ERROR : Failed to closehw "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf"
+Reason: Cannot close hw design 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/system.hdf'.
+Design is not opened in the current session.
+
+11:01:04 INFO  : Launching XSCT server: xsct.bat -interactive D:\MuhammetAliVarlik\AYBU\Vivado_Projects\Buttons\Buttons.sdk\temp_xsdb_launch_script.tcl
+11:01:08 INFO  : XSCT server has started successfully.
+11:01:08 INFO  : Successfully done setting XSCT server connection channel  
+11:01:08 INFO  : Successfully done setting SDK workspace  
+11:01:11 INFO  : Registering command handlers for SDK TCF services
+11:01:11 INFO  : Processing command line option -hwspec D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf.
+11:01:11 INFO  : Checking for hwspec changes in the project buttons_wrapper_hw_platform_1.
+11:01:18 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1710493067222,  Project:1710492198950
+11:01:18 INFO  : The hardware specification for project 'buttons_wrapper_hw_platform_1' is different from D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf.
+11:01:18 INFO  : Copied contents of D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper.hdf into \buttons_wrapper_hw_platform_1\system.hdf.
+11:01:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:01:27 INFO  : Clearing existing target manager status.
+11:01:27 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:01:27 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:01:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:01:57 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/buttons_wrapper.bit"
+11:05:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:05:59 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/buttons_wrapper.bit"
+11:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:06:09 INFO  : 'fpga -state' command is executed.
+11:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:06:09 INFO  : 'jtag frequency' command is executed.
+11:06:09 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:06:09 INFO  : Context for 'APU' is selected.
+11:06:09 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:06:09 INFO  : 'configparams force-mem-access 1' command is executed.
+11:06:09 INFO  : Context for 'APU' is selected.
+11:06:09 INFO  : 'stop' command is executed.
+11:06:10 INFO  : 'ps7_init' command is executed.
+11:06:10 INFO  : 'ps7_post_config' command is executed.
+11:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:10 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:06:10 INFO  : 'configparams force-mem-access 0' command is executed.
+11:06:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:06:10 INFO  : 'con' command is executed.
+11:06:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:06:10 INFO  : Disconnected from the channel tcfchan#1.
+11:07:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:07:17 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/buttons_wrapper.bit"
+11:07:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:07:27 INFO  : 'fpga -state' command is executed.
+11:07:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:07:27 INFO  : 'jtag frequency' command is executed.
+11:07:27 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:07:27 INFO  : Context for 'APU' is selected.
+11:07:27 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:07:27 INFO  : 'configparams force-mem-access 1' command is executed.
+11:07:27 INFO  : Context for 'APU' is selected.
+11:07:27 INFO  : 'stop' command is executed.
+11:07:28 INFO  : 'ps7_init' command is executed.
+11:07:28 INFO  : 'ps7_post_config' command is executed.
+11:07:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:07:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:28 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:07:28 INFO  : 'configparams force-mem-access 0' command is executed.
+11:07:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:07:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:28 INFO  : 'con' command is executed.
+11:07:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:07:28 INFO  : Disconnected from the channel tcfchan#2.
+11:08:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:08:08 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/buttons_wrapper.bit"
+11:08:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:08:15 INFO  : 'fpga -state' command is executed.
+11:08:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:08:15 INFO  : 'jtag frequency' command is executed.
+11:08:15 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:08:15 INFO  : Context for 'APU' is selected.
+11:08:15 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:08:15 INFO  : 'configparams force-mem-access 1' command is executed.
+11:08:15 INFO  : Context for 'APU' is selected.
+11:08:15 INFO  : 'stop' command is executed.
+11:08:16 INFO  : 'ps7_init' command is executed.
+11:08:16 INFO  : 'ps7_post_config' command is executed.
+11:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:16 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:08:16 INFO  : 'configparams force-mem-access 0' command is executed.
+11:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:16 INFO  : 'con' command is executed.
+11:08:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:08:16 INFO  : Disconnected from the channel tcfchan#3.
+11:12:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:12:57 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+11:13:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:13:08 INFO  : 'fpga -state' command is executed.
+11:13:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:13:08 INFO  : 'jtag frequency' command is executed.
+11:13:08 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:13:08 INFO  : Context for 'APU' is selected.
+11:13:08 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:13:08 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:08 INFO  : Context for 'APU' is selected.
+11:13:09 INFO  : 'stop' command is executed.
+11:13:09 INFO  : 'ps7_init' command is executed.
+11:13:09 INFO  : 'ps7_post_config' command is executed.
+11:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:09 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:13:09 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:09 INFO  : 'con' command is executed.
+11:13:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:13:09 INFO  : Disconnected from the channel tcfchan#4.
+11:14:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:14:53 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/buttons_wrapper.bit"
+11:15:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:15:13 INFO  : 'fpga -state' command is executed.
+11:15:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:15:13 INFO  : 'jtag frequency' command is executed.
+11:15:13 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:15:13 INFO  : Context for 'APU' is selected.
+11:15:13 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:15:13 INFO  : 'configparams force-mem-access 1' command is executed.
+11:15:13 INFO  : Context for 'APU' is selected.
+11:15:13 INFO  : 'stop' command is executed.
+11:15:14 INFO  : 'ps7_init' command is executed.
+11:15:14 INFO  : 'ps7_post_config' command is executed.
+11:15:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:15:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:14 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:14 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:14 INFO  : 'con' command is executed.
+11:15:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:15:14 INFO  : Disconnected from the channel tcfchan#5.
+11:15:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:15:41 INFO  : FPGA configured successfully with bitstream "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_0/buttons_wrapper.bit"
+11:15:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A" && level==0} -index 1' command is executed.
+11:15:49 INFO  : 'fpga -state' command is executed.
+11:15:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE20A' is selected.
+11:15:49 INFO  : 'jtag frequency' command is executed.
+11:15:49 INFO  : Sourcing of 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl' is done.
+11:15:49 INFO  : Context for 'APU' is selected.
+11:15:49 INFO  : Hardware design information is loaded from 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf'.
+11:15:49 INFO  : 'configparams force-mem-access 1' command is executed.
+11:15:49 INFO  : Context for 'APU' is selected.
+11:15:49 INFO  : 'stop' command is executed.
+11:15:50 INFO  : 'ps7_init' command is executed.
+11:15:50 INFO  : 'ps7_post_config' command is executed.
+11:15:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:15:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:50 INFO  : The application 'D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:50 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+loadhw -hw D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/buttons_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+dow D:/MuhammetAliVarlik/AYBU/Vivado_Projects/Buttons/Buttons.sdk/interrupt_counter/Debug/interrupt_counter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:50 INFO  : 'con' command is executed.
+11:15:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE20A"} -index 0
+con
+----------------End of Script----------------
+
+11:15:50 INFO  : Disconnected from the channel tcfchan#6.

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Dec 23 16:25:29 2023
+# Process ID: 18560
+# Current directory: D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.runs/synth_1
+# Command line: vivado.exe -log Sort_Mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sort_Mem.tcl
+# Log file: D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.runs/synth_1/Sort_Mem.vds
+# Journal file: D:/MuhammetAliVarlik/AYBU/Vivado_Projects/SPBlockRAM/SPBlockRAM.runs/synth_1\vivado.jou
+# Running On: DESKTOP-D7GVVK9, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 17041 MB
+#-----------------------------------------------------------
+source Sort_Mem.tcl -notrace

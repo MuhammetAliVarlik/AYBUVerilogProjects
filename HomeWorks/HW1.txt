@@ -1,0 +1,14 @@
+You have been given threee two-bit unsigned numbers, A[1:0],B[1:0] and C[1:0]. Assume no two numbers are equal.
+
+Design a circuit that finds the sum of the two largest numbers.
+
+A>B>C Outuput A+B
+
+Select ZedBorad
+-Try to do this using 2 different methods.
+-Write these verilog models and verify the functionality.
+-Try to guess the resource usage in each case
+
+Additional Exercises
+-Design a 16:1 Demux
+-Design a 4:16 Decoder

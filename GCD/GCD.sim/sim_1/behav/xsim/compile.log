@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/GCD/GCD.srcs/sources_1/new/GCDControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GCDControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/GCD/GCD.srcs/sim_1/new/GCD_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GCD_Tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MuhammetAliVarlik/AYBU/Vivado_Projects/GCD/GCD.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SPBlockRAM.srcs/sources_1/new/SPBlockRAM.v" \
+"../../../../SPBlockRAM.srcs/sources_1/new/Sort_Mem.v" \
+"../../../../SPBlockRAM.srcs/sim_1/new/SPBlockRAMSim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Comparator1_Simulation_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Comparator1_Simulation" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999,996 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,001 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="234"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/Comparator1_Simulation/A_tb" type="array">
+      <obj_property name="ElementShortName">A_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">A_tb[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Comparator1_Simulation/B_tb" type="array">
+      <obj_property name="ElementShortName">B_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">B_tb[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Comparator1_Simulation/C_tb" type="array">
+      <obj_property name="ElementShortName">C_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">C_tb[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Comparator1_Simulation/sum_tb" type="array">
+      <obj_property name="ElementShortName">sum_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_tb[1:0]</obj_property>
+   </wvobject>
+</wave_config>

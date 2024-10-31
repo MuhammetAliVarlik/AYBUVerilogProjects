@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/interrupt/ip/interrupt_axi_gpio_0_0/sim/interrupt_axi_gpio_0_0.vhd" \
+"../../../bd/interrupt/ip/interrupt_axi_gpio_1_0/sim/interrupt_axi_gpio_1_0.vhd" \
+"../../../bd/interrupt/ip/interrupt_rst_ps7_0_50M_0/sim/interrupt_rst_ps7_0_50M_0.vhd" \
+"../../../bd/interrupt/ip/interrupt_axi_timer_0_0/sim/interrupt_axi_timer_0_0.vhd" \
+
+nosort
